@@ -1,3 +1,5 @@
+![NuGet Version](https://img.shields.io/nuget/v/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob)
+
 > [!CAUTION]
 > This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production. Please also make sure you have a backup of your database before running this scheduled job.
 > The software is provided as is and you use it at your own risk.
@@ -12,6 +14,8 @@ This scheduled job will delete any missing commerce properties from the database
   * The other one will delete all the missing properties.
 
 # 🚀 Installation
+
+NuGet URL: https://www.nuget.org/packages/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob
 
 Install the package and the scheduled jobs will be available in the list of scheduled jobs.
 
