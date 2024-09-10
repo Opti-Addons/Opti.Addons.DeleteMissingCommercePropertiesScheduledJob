@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>OptimizelyDeleteMissingCommerceProperties</RootNamespace>
@@ -12,11 +11,13 @@
         <Description>This scheduled job will delete any missing commerce properties from the database. This is useful when you have removed a property from your code and you want to remove it from the database.</Description>
         <Copyright>Dariusz Woźniak</Copyright>
         <PackageTags>episerver,optimizely,optiaddons</PackageTags>
+        <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+        <LangVersion>12</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="EPiServer.CMS.Core" Version="12.21.7" />
-      <PackageReference Include="EPiServer.Commerce.Core" Version="14.26.0" />
+      <PackageReference Include="EPiServer.CMS.Core" Version="[12.0,13.0)" />
+      <PackageReference Include="EPiServer.Commerce.Core" Version="[14.0,15.0)" />
     </ItemGroup>
 
     <ItemGroup>
