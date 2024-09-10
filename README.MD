@@ -1,7 +1,5 @@
 > [!CAUTION]
-> This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production.
-[ListMissingCommercePropertiesScheduledJob.cs](ListMissingCommercePropertiesScheduledJob.cs)
-There are two scheduled jobs that can be used:
+> This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production. Please also make sure you have a backup of your database before running this scheduled job.
 
 # ℹ️ Delete Missing Commerce Properties Scheduled Job
 
