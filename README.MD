@@ -1,11 +1,11 @@
-# ℹ️ Opti.Addons.DeleteMissingCommercePropertiesScheduledJob
-
-This scheduled job will delete any missing commerce properties from the database. This is useful when you have removed a property from your code and you want to remove it from the database.
-
 > [!CAUTION]
 > This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production.
 [ListMissingCommercePropertiesScheduledJob.cs](ListMissingCommercePropertiesScheduledJob.cs)
 There are two scheduled jobs that can be used:
+
+# ℹ️ Delete Missing Commerce Properties Scheduled Job
+
+This scheduled job will delete any missing commerce properties from the database. This is useful when you have removed a property from your code and you want to remove it from the database.
 
 * **[Opti Addons] Delete missing Commerce data: List**
   * The one is read-only and will list all the missing properties.
