@@ -13,6 +13,9 @@
         <PackageTags>episerver,optimizely,optiaddons</PackageTags>
         <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
         <LangVersion>12</LangVersion>
+        <PackageProjectUrl>https://github.com/Opti-Addons/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Opti-Addons/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Opti-Addons/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,6 +25,10 @@
 
     <ItemGroup>
       <Content Include=".github\workflows\dotnet.yml" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.MD" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
