@@ -15,7 +15,7 @@ This scheduled job will delete any missing commerce properties from the database
 
 Install the package and the scheduled jobs will be available in the list of scheduled jobs.
 
-Add to the Startup.cs:
+Add to the `Startup.cs`:
 
 ```csharp
 services.AddDeleteMissingCommerceProperties();
