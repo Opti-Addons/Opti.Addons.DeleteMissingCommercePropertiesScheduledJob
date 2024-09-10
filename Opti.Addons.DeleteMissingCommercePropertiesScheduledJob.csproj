@@ -19,4 +19,8 @@
       <PackageReference Include="EPiServer.Commerce.Core" Version="14.26.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include=".github\workflows\dotnet.yml" />
+    </ItemGroup>
+
 </Project>
