@@ -1,5 +1,6 @@
 > [!CAUTION]
 > This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production. Please also make sure you have a backup of your database before running this scheduled job.
+> The software is provided as is and you use it at your own risk.
 
 # ℹ️ Delete Missing Commerce Properties Scheduled Job
 
