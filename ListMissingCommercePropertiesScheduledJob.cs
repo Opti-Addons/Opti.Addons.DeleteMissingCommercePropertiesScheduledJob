@@ -1,6 +1,6 @@
 ﻿namespace OptimizelyDeleteMissingCommerceProperties;
 
-[ScheduledPlugIn(DisplayName = "[Opti Addons] Delete missing Commerce data: List", 
+[ScheduledPlugIn(DisplayName = "[Opti.Addons] Delete missing Commerce data: List", 
     Description = "Lists properties that are not present in the Commerce model classes",
     GUID = "7F349163-030E-479C-A858-289570472B39")]
 public class ListMissingCommercePropertiesScheduledJob : ScheduledJobBase
