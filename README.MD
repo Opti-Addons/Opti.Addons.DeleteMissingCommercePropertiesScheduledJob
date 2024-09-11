@@ -17,7 +17,7 @@ This scheduled job will delete any missing commerce properties from the database
 
 NuGet URL: https://www.nuget.org/packages/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob
 
-1: Install the package from the NuGet
+1: Install the package from the NuGet.
 
 2: Add to the `Startup.cs`:
 
