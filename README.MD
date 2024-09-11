@@ -6,7 +6,7 @@
 
 # ℹ️ Delete Missing Commerce Properties Scheduled Job
 
-This scheduled job will delete any missing commerce properties from the database. This is useful when you have removed a property from your code and you want to remove it from the database.
+This scheduled job will delete any missing commerce properties from the database. This is useful when you have removed a property from your code and you want to remove it from the database. By default, Optimizely code does not remove properties from the database when you remove them from the code.
 
 * **[Opti.Addons] Delete missing Commerce data: List**
   * The one is read-only and will list all the missing properties.
