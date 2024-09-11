@@ -1,4 +1,4 @@
-![NuGet Version](https://img.shields.io/nuget/v/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob)
+[![NuGet Version](https://img.shields.io/nuget/v/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob)](https://www.nuget.org/packages/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob)
 
 > [!CAUTION]
 > This scheduled job was tested locally with a few test cases. Please review the code and test it in your environment before running it in production. Please also make sure you have a backup of your database before running this scheduled job.
