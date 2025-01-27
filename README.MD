@@ -34,5 +34,4 @@ If the version of your .NET or CMS/Commerce packages are different, you may eith
 
 # 📃 Version history
 
-* 0.1.0
-  * Initial version
+See https://github.com/Opti-Addons/Opti.Addons.DeleteMissingCommercePropertiesScheduledJob/releases.
