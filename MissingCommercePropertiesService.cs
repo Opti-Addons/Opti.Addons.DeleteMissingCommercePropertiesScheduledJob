@@ -20,7 +20,7 @@ public class MissingCommercePropertiesService(IContentTypeRepository contentType
 
             foreach (var pd in contentType.PropertyDefinitions)
             {
-                if (objectProps.All(p => p.Name != pd.Name)) propsToRemove.Add(new PropertyModel(contentType.ModelType, pd));
+                if (objectProps.All(p => p.Name != pd.Name)) propsToRemove.Add(new PropertyModel(contentType, pd));
             }
         }
 
@@ -33,7 +33,8 @@ public class MissingCommercePropertiesService(IContentTypeRepository contentType
 
         var metaClassCollection = MetaClass.GetList(ctx);
         var metaClasses = new List<MetaClass>();
-        
+
+        // ReSharper disable once GenericEnumeratorNotDisposed - this does not need to be disposed
         var enumerator = metaClassCollection.GetEnumerator();
         while (enumerator.MoveNext())
         {
@@ -46,7 +47,9 @@ public class MissingCommercePropertiesService(IContentTypeRepository contentType
             var propertyToRemove = propertyDefinitionType.CreateWritableClone();
             _propertyDefinitionRepository.Delete(propertyToRemove);
             
-            var metaClass = metaClasses.FirstOrDefault(x => $"{x.Namespace}.{x.Name}" == property.Type.FullName);
+            // In Commerce, there cannot be a class with the same Name:
+            var metaClass = metaClasses.FirstOrDefault(x => x.Name == property.Type.Name);
+            
             if (metaClass != null)
             {
                 var mc = MetaClass.Load(ctx, metaClass.Id);
