@@ -1,9 +1,8 @@
 ﻿namespace OptimizelyDeleteMissingCommerceProperties;
 
-public class PropertyModel(Type type, PropertyDefinition propertyDefinition)
+public class PropertyModel(ContentType type, PropertyDefinition propertyDefinition)
 {
-    public Type Type { get; set; } = type ?? throw new ArgumentNullException(nameof(type));
-    
+    public ContentType Type { get; set; } = type ?? throw new ArgumentNullException(nameof(type));
     public PropertyDefinition PropertyDefinition { get; set; } = propertyDefinition ?? throw new ArgumentNullException(nameof(propertyDefinition));
     
     public string Name() => PropertyDefinition.Name;
